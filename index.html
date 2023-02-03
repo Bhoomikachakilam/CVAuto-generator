@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,62 +13,62 @@
     <main>
         <div class="left">
             <form>
-                <label for="Name">Name:</label>
-                <textarea id="Name" name="Name" rows="1" cols="50"></textarea>
-                   <br>
-                <label for="Email">Email:</label>
-                <textarea id="Email" name="Email" rows="1" cols="50"></textarea>
-                    <br>
-                <label for="Phone">Phone:</label>
-                <textarea id="Phone" name="Phone" rows="1" cols="50"></textarea>
-                    <br>
-                <label for="Github">Github:</label>
-                <textarea id="Github" name="Github" rows="1" cols="50"></textarea>
-                    <br>
-                <label for="Linkedin">Linkedin:</label>
-                <textarea id="Linkedin" name="Linkedin" rows="1" cols="50"></textarea>
-                    <br>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name = "name" value="Please enter your name"><br>
+                <label for="email">Email:  </label>
+                <input type="text" id="email" email="email" value="Enter your Email"><br>
+                <label for="phone">Phone: </label>
+                <input type="text" id="phone" phone="phone" value="Enter your phone number"><br>
+                <label for="github">Github: </label>
+                <input type="text" id="github" github="github" value="Enter your Github link"><br>
+                <label for="Linkedin">Linkedin: </label>
+                <input type="text" id="linkedin" Linkedin="Linkedin" value="Enter your Linkedin link"><br>
                 <!-- Name , Email , Phone , Github , Linkedin -->
                 <fieldset>
                     <legend>Education</legend>
-                    Degree:<input type="text"><br>
-                    College:<input type="text"><br>
-                    Starting year:<input type="text"><br> 
-                    Pasingyear:<input type="text"> <br> 
-                    CGPA:<input type="text"> <br>  
+                    <label for="degree">Degree: </label>
+                    <input type="text" degree="degree" id="degree" value="Enter your Degree"><br>
+                    <label for="college">College: </label>
+                    <input type="text" id="college" college="college" value="Enter your college"><br>
+                    <label for="Starting year">Starting Year: </label>
+                    <input type="date" id="Startingyear" startingyear="Starting year" ><br>
+                    <label for="Ending year">Ending Year: </label>
+                    <input type="date" id="endingyear" endingyear="endingyear" ><br>
+                    <label for="CGPA">CGPA: </label>
+                    <input type="text" id="CGPA" CGPA="CGPA" value="Enter your CGPA">
                     <!-- Degree , College , Starting Year , Passing Year , CGPA -->
                 </fieldset>
                 <fieldset>
                     <legend>Skills</legend>
-                    <label for="Skills">Skills:</label>
-	                     <textarea id="Skills" name="Skills" rows="4" cols="30">
-                         </textarea>
-	                        <br>
                     <!-- skills -->
+                    <label id="skill-title" for="skill">Skills:</label>
+                   <textarea name="skills" id="skill" cols="30" rows="4">skills eg.html etc..</textarea><br>
                 </fieldset>
                 <fieldset>
                     <legend>Projects</legend>
-                    Project:<input type="text"><br>
-                     <label for="Description">Description:</label>
-                        <textarea id="Description" name="Description" rows="3" cols="30"></textarea>
-	                        <br>
-                         Link:<input type="text"> <br> 
+                    <label for="project">Project:</label>
+                    <input type="text" id="project" project="project" value="Enter your project"><br>
+                    <label id="des1" for="description">Description:</label>
+                    <textarea name="description1" id="description1" cols="30" rows="4">write in html format</textarea><br>
+                    <label id="link-title" for="Link">Link:</label>
+                    <input type="text" name="link" id="link" value="Enter the link here">
                     <!-- Project , Description , Link -->
                 </fieldset>
                 <fieldset>
                     <legend>Experience</legend>
-                    Company:<input type="text"><br>
-                    Designation:<input type="text"><br>
-                    Duration:<input type="text"><br>
-                    <label for="Description">Description:</label>
-                <textarea id="Description" name="Description" rows="3" cols="30">
-                </textarea>
-                <br>   
+                    <label for="company">Company:</label>
+                    <input type="text" name="company" id="company" value="Name of the company"><br>
+                    <label for="designation">Designation:</label>
+                    <input type="text" name="designation" id="designation" value="Enter the previous designation"><br>
+                    <label for="duration">Duration:</label>
+                    <input type="text" name="duration" id="duration" value="Enter the duration"><br>
+                    <label id="des2" for="description">Description:</label>
+                    <textarea name="description2" id="description2" cols="30" rows="4">write in html format</textarea><br>
                     <!-- Company , Designation , Duration , Description -->
                 </fieldset>
                 <button type="submit" class="btn">submit</button>
                 <button type="reset" class="btn">reset</button>
-                <button class="btn" onclick="handleLeft()">view and print</button>
+                <button class="btn" onclick="handleLeft()">View and Print/button>
             </form>
         </div>
         <div class="right">
