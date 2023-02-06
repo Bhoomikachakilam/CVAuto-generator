@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,69 +13,69 @@
         <div class="left">
             <form>
                 <label for="name">Name: </label>
-                <input type="text" id="name" name = "name" value="Please enter your name"><br>
+                <input type="text" id="name" name = "name" placeholder="Enter your name"><br>
                 <label for="email">Email:  </label>
-                <input type="text" id="email" email="email" value="Enter your Email"><br>
+                <input type="text" id="email" email="email" placeholder="Enter your Email"><br>
                 <label for="phone">Phone: </label>
-                <input type="text" id="phone" phone="phone" value="Enter your phone number"><br>
+                <input type="text" id="phone" phone="phone" placeholder="Enter your phone number"><br>
                 <label for="github">Github: </label>
-                <input type="text" id="github" github="github" value="Enter your Github link"><br>
+                <input type="url" id="github" github="github" placeholder="Enter your Github link"><br>
                 <label for="Linkedin">Linkedin: </label>
-                <input type="text" id="linkedin" Linkedin="Linkedin" value="Enter your Linkedin link"><br>
+                <input type="url" id="linkedin" Linkedin="Linkedin" placeholder="Enter your Linkedin link"><br>
+               
                 <!-- Name , Email , Phone , Github , Linkedin -->
                 <fieldset>
                     <legend>Education</legend>
                     <label for="degree">Degree: </label>
-                    <input type="text" degree="degree" id="degree" value="Enter your Degree"><br>
+                    <input type="text" degree="degree" id="degree" placeholder="Enter your Degree"><br>
                     <label for="college">College: </label>
-                    <input type="text" id="college" college="college" value="Enter your college"><br>
+                    <input type="text" id="college" college="college" placeholder="Enter your college"><br>
                     <label for="Starting year">Starting Year: </label>
-                    <input type="date" id="Startingyear" startingyear="Starting year" ><br>
-                    <label for="Ending year">Ending Year: </label>
-                    <input type="date" id="endingyear" endingyear="endingyear" ><br>
+                    <input type="text" id="Startingyear" startingyear="Starting year" ><br>
+                    <label for="Ending year">Passing year: </label>
+                    <input type="text" id="endingyear" endingyear="endingyear" ><br>
                     <label for="CGPA">CGPA: </label>
-                    <input type="text" id="CGPA" CGPA="CGPA" value="Enter your CGPA">
+                    <input type="text" id="CGPA" CGPA="CGPA" placeholder="Enter your CGPA">
                     <!-- Degree , College , Starting Year , Passing Year , CGPA -->
                 </fieldset>
                 <fieldset>
                     <legend>Skills</legend>
                     <!-- skills -->
                     <label id="skill-title" for="skill">Skills:</label>
-                   <textarea name="skills" id="skill" cols="30" rows="4">skills eg.html etc..</textarea><br>
+                   <textarea name="skills" id="skill" cols="30" rows="4"></textarea><br>
                 </fieldset>
                 <fieldset>
                     <legend>Projects</legend>
                     <label for="project">Project:</label>
-                    <input type="text" id="project" project="project" value="Enter your project"><br>
+                    <input type="text" id="project" project="project" placeholder="Enter your project"><br>
                     <label id="des1" for="description">Description:</label>
-                    <textarea name="description1" id="description1" cols="30" rows="4">write in html format</textarea><br>
+                    <textarea name="description1" id="description1" cols="30" rows="4"></textarea><br>
                     <label id="link-title" for="Link">Link:</label>
-                    <input type="text" name="link" id="link" value="Enter the link here">
+                    <input type="url" name="link" id="link" placeholder="Enter the link here">
                     <!-- Project , Description , Link -->
                 </fieldset>
                 <fieldset>
                     <legend>Experience</legend>
                     <label for="company">Company:</label>
-                    <input type="text" name="company" id="company" value="Name of the company"><br>
+                    <input type="text" name="company" id="company" placeholder="Name of the company"><br>
                     <label for="designation">Designation:</label>
-                    <input type="text" name="designation" id="designation" value="Enter the previous designation"><br>
+                    <input type="text" name="designation" id="designation" placeholder="Enter the previous designation"><br>
                     <label for="duration">Duration:</label>
-                    <input type="text" name="duration" id="duration" value="Enter the duration"><br>
+                    <input type="text" name="duration" id="duration" placeholder="Enter the duration"><br>
                     <label id="des2" for="description">Description:</label>
-                    <textarea name="description2" id="description2" cols="30" rows="4">write in html format</textarea><br>
+                    <textarea name="description2" id="description2" cols="30" rows="4"></textarea><br>
                     <!-- Company , Designation , Duration , Description -->
                 </fieldset>
                 <button type="submit" class="btn">submit</button>
                 <button type="reset" class="btn">reset</button>
-                <button class="btn" onclick="handleLeft()">view and print</button>
-
+                <button class="btn" onclick="handleLeft()">View And print</button>
             </form>
-        </div>
+       <!-- </div>
         <div class="right">
             <div class="block1">
-                <!-- Name -->
+                 Name -->
                 <!--Email , Phone , Github , Linkedin  -->
-            </div>
+           <!-- </div>
             <div class="block2">
                 <h2>Education</h2>
             </div>
@@ -89,7 +88,49 @@
                 <h2>Experience</h2>
             </div>
             <button class="btn print" onclick="handlePrint()">Print</button>
-        </div>
+        </div> -->
+    </div>
+    <div class="right">
+      <div class="block1">
+        <h1 class="name-style" id="name_resume"></h1>
+        <p class="email-style" id="email_resume"></p>
+        <p class="phone-style" id="phone_resume"></p>
+        <p class="github-style" id="github_resume"></p>
+        <p class="linkedin-style" id="linkedin_resume"></p>
+      </div>
+      <div class="block2">
+        <h2 class="education">Education</h2>
+        <div class="underline"></div>
+        <p class="col" id="college_name"></p>
+        <p class="btech-style" id="degree_resume"></p>
+        <p id="startingyear_resume">-</p>
+        <p id="endingyear_resume"></p>
+        <p id="cgpa_resume"> CGPA:</p>
+      </div>
+      <div class="block3">
+        <h2 class="skills-title">Skills</h2>
+        <div class="underline"></div>
+        <p class="skill-style" id="skill_resume"></p>
+      </div>
+      <div class="block4">
+        <h2 class="project-title">Projects</h2>
+        <div class="underline"></div>
+        <p class="project-style" id="project_resume"></p>
+        <p id="description1_resume"></p>
+        <p class="link-style" id="link_resume"></p>
+        <!-- Add project information here -->
+      </div>
+      <div class="block5">
+        <h2 class="experience-title">Experience</h2>
+        <div class="underline"></div>
+        <p class="role" id="designation_resume"></p>
+        <p class="company-name" id="company_resume"></p>
+        <p class="duration-style" id="duration_resume"></p>
+        <p id="description2_resume"></p>
+        <!-- Add experience information here -->
+      </div>
+      <button class="btn print" onclick="handlePrint()">Print</button>
+    </div>
     </main>
 
     <script src="./app.js"></script>

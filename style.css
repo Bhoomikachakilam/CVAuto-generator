@@ -78,12 +78,18 @@ main>.right>.block1{
     flex-direction: column;
     color: gray;
     width: 60vw;
+    height: 100px;
+
+}
+.block3,.block4,.block5{
+    width: 63vw;
 }
 .print{
     display: none;
 }
 #name,#project,#link,#company,#designation,#duration,#email,#phone,#github,#linkedin,#degree,#college,#Startingyear,#endingyear,#CGPA{
     position: fixed;
+    row-gap: 10px;
     left: 200px;
     width: 17em;
 } 
@@ -116,4 +122,60 @@ br{
 #des1,#des2{
     position: relative;
     bottom: 50px;
+}
+.underline{
+        width: 60em;
+        border-bottom: 2px solid black;
+}
+.education,.experience-title,.project-title,.skills-title{
+    color: rgb(165, 165, 165);
+}
+.email-style,.phone-style,.github-style,.linkedin-style,.link-style{
+    color: blue;
+    font-size: 14px;
+}
+.name-style{
+    position: relative;
+    left: -5px;
+    font-size: 3em;
+}
+.email-style{
+    position: relative;
+    left: -315px;
+    bottom: -3.6px;
+}
+.phone-style{
+    position: relative;
+    right: 11.5rem;
+    bottom: 13px;
+}
+.github-style{
+    position: relative;
+    bottom: 30px;
+    left: -35px;
+}
+.linkedin-style{
+    position: relative;
+    left: 16.1em;
+    bottom: 3.3em;
+}
+.col,.project-style{
+    font-weight: 750;
+    font-size: 1.7em;
+}
+.btech-style,.skill-style{
+    font-weight: 750;
+    font-size: 1.2em;
+}
+.role{
+    font-weight: 1000;
+    font-size: 1.7em;
+}
+.company-name{
+    color: gray;
+    font-weight: 1000;
+    font-size: 1.2em;
+}
+.duration-style{
+    color: gray;
 }
