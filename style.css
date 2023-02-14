@@ -128,7 +128,7 @@ br{
         border-bottom: 2px solid black;
 }
 .education,.experience-title,.project-title,.skills-title{
-    color: rgb(165, 165, 165);
+    color: rgb(160, 160, 160);
 }
 .email-style,.phone-style,.github-style,.linkedin-style,.link-style{
     color: blue;
