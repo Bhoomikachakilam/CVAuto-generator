@@ -69,7 +69,7 @@ main>.right{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    gap: 1rem;
+
 }
 main>.right>.block1{
     display: flex;
@@ -81,22 +81,21 @@ main>.right>.block1{
     height: 100px;
 
 }
-.block3,.block4,.block5{
+.block2,.block3,.block4,.block5{
     width: 63vw;
 }
 .print{
     display: none;
 }
-#name,#project,#link,#company,#designation,#duration,#email,#phone,#github,#linkedin,#degree,#college,#Startingyear,#endingyear,#CGPA{
+#name,#project,#link,#company,#designation,#duration,#email,#phone,#github,#linkedin,#degree,#college,#startingyear,#endingyear,#cgpa{
     position: fixed;
-    row-gap: 10px;
     left: 200px;
     width: 17em;
 } 
 br{
     margin-bottom: 5em;
 }
-#Startingyear,#endingyear{
+#startingyear,#endingyear{
     width: 17em;
 }
 #skill,#description1{
@@ -119,7 +118,7 @@ br{
     position: fixed;
     top: 250px;
 }
-#des1,#des2{
+#description1,#description2{
     position: relative;
     bottom: 50px;
 }
@@ -127,17 +126,21 @@ br{
         width: 60em;
         border-bottom: 2px solid black;
 }
-.education,.experience-title,.project-title,.skills-title{
+.education,.experience-title,.project-title,.skill-title{
     color: rgb(160, 160, 160);
 }
-.email-style,.phone-style,.github-style,.linkedin-style,.link-style{
+.email-style,.phone-style,.github-style,.linkedin-style{
     color: blue;
     font-size: 14px;
+    margin: 0px 0px 0px 200px;
 }
+/*
 .name-style{
+    margin-top: 50px;
     position: relative;
     left: -5px;
-    font-size: 3em;
+    font-size: 1.5em;
+    
 }
 .email-style{
     position: relative;
@@ -145,37 +148,58 @@ br{
     bottom: -3.6px;
 }
 .phone-style{
+    
     position: relative;
     right: 11.5rem;
     bottom: 13px;
 }
 .github-style{
+    
     position: relative;
     bottom: 30px;
     left: -35px;
+  
 }
 .linkedin-style{
+    margin-left: 90px;
     position: relative;
     left: 16.1em;
     bottom: 3.3em;
+
+}*/
+
+
+#phone_resume {
+    color: rgb(0, 74, 233);
 }
-.col,.project-style{
-    font-weight: 750;
-    font-size: 1.7em;
+
+#name_resume {
+    text-align: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: bolder;
+    color: black;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 200px;
 }
-.btech-style,.skill-style{
-    font-weight: 750;
-    font-size: 1.2em;
+
+#github_resume,
+#linkedin_resume,
+ {
+    color: rgb(0, 74, 233);
+    text-decoration: underline;
 }
-.role{
-    font-weight: 1000;
-    font-size: 1.7em;
+
+#email_resume {
+    color: rgb(0, 74, 233);
 }
-.company-name{
-    color: gray;
-    font-weight: 1000;
-    font-size: 1.2em;
-}
-.duration-style{
-    color: gray;
-}
+/*
+#degree_resume, 
+#college_resume,
+#startingyear_resume,
+#endingyear_resume,
+#cgpa_resume
+{
+    
+}*/
