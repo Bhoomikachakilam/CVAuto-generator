@@ -185,8 +185,7 @@ br{
 }
 
 #github_resume,
-#linkedin_resume,
- {
+#linkedin_resume {
     color: rgb(0, 74, 233);
     text-decoration: underline;
 }
