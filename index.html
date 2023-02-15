@@ -10,116 +10,137 @@
 </head>
 <body>
     <main>
-        <div class="left">
+        <div class="left" id="left">
             <form>
-                <label for="name">Name: </label>
-                <input type="text" id="name" name = "name" placeholder="Enter your name"><br>
-                <label for="email">Email:  </label>
-                <input type="text" id="email" email="email" placeholder="Enter your Email"><br>
-                <label for="phone">Phone: </label>
-                <input type="text" id="phone" phone="phone" placeholder="Enter your phone number"><br>
-                <label for="github">Github: </label>
-                <input type="url" id="github" github="github" placeholder="Enter your Github link"><br>
-                <label for="Linkedin">Linkedin: </label>
-                <input type="url" id="linkedin" Linkedin="Linkedin" placeholder="Enter your Linkedin link"><br>
-               
                 <!-- Name , Email , Phone , Github , Linkedin -->
+                <div class="sameline">
+                    <p>Name : </p>
+                    <input type="text" id="name" placeholder=" name" >
+                </div>
+                <div class="sameline">
+                    <p>Email :   </p>
+                    <input type="email" id="email" placeholder=" Email">
+                </div>
+                <div class="sameline">
+                    <p>Phone : </p>
+                    <input type="text" id="Mobile" placeholder=" Phone" >
+                </div>
+                <div class="sameline">
+                    <p>Github : </p>
+                    <input type="url" id="Github" placeholder=" Github">
+                </div>
+                <div class="sameline">
+                    <p>Linkedin : </p>
+                    <input type="url" id="linkedin" placeholder=" Linkedin">
+                </div>
                 <fieldset>
                     <legend>Education</legend>
-                    <label for="degree">Degree: </label>
-                    <input type="text" degree="degree" id="degree" placeholder="Enter your Degree"><br>
-                    <label for="college">College: </label>
-                    <input type="text" id="college" college="college" placeholder="Enter your college"><br> 
-                    <label for="Starting year">Starting year: </label>
-                    <input type="text" id="startingyear" endingyear="startingyear"placeholder="Enter your startig year" ><br>
-                    <label for="Ending year">Ending Year: </label>
-                    <input type="text" id="endingyear" endingyear="endingyear"placeholder="Enter your ending year" ><br>
-                    <label for="cgpa">CGPA: </label>
-                    <input type="text" id="cgpa" cgpa="cgpa" placeholder="Enter your CGPA">
-                   
-                  </fieldset>
+                    <!-- Degree , College , Starting Year , Passing Year , CGPA -->
+                    <div class="sameline">
+                        <p>Degree : </p>
+                        <input type="text" id="degree" placeholder=" Degree" >
+                    </div>
+                    <div class="sameline">
+                        <p>College : </p>
+                        <input type="text" id="college" placeholder=" College" >
+                    </div>
+                    <div class="sameline">
+                        <p>Starting Year : </p>
+                        <input type="text" id="startingyear" placeholder=" Starting Year" >
+                    </div>
+                    <div class="sameline">
+                        <p>Passing Year</p>
+                        <input type="text" id="passingyear" placeholder=" Passing Year">
+                    </div>
+                </fieldset>
                 <fieldset>
                     <legend>Skills</legend>
                     <!-- skills -->
-                    <label id="skill-title" for="skill1">Skill:</label>
-                   <textarea name="skill" id="skill" cols="30" rows="4" placeholder="Enter your skillset"></textarea><br>
+                    <div class="sameline">
+                        <p>Skills : </p>
+                        <textarea placeholder="Skills eg. HTML, CSS" id="skills"></textarea>
+                    </div>
                 </fieldset>
-
-
                 <fieldset>
                     <legend>Projects</legend>
-                    <label for="project">Project:</label>
-                    <input type="text" id="project" project="project" placeholder="Enter your project"><br>
-                    <label id="des1" for="description">Description:</label>
-                    <textarea name="description1" id="description1" cols="30" rows="4"></textarea><br>
-                    <label id="link-title" for="Link">Link:</label>
-                    <input type="url" name="link" id="link" placeholder="Enter the link here">
                     <!-- Project , Description , Link -->
+                    <div class="sameline">
+                        <p>Project : </p>
+                        <input type="text" id="project" placeholder=" Project">
+                    </div>
+                    <div class="sameline">
+                        <p>Description : </p>
+                        <textarea placeholder="Write in HTML format" id="projectdescription"></textarea>
+                    </div>
+                    <div class="sameline">
+                        <p>Link : </p>
+                        <input type="url" id="projectlink" placeholder=" Link">
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Experience</legend>
-                    <label for="company">company:</label>
-                    <input type="text" name="company" id="company" placeholder="Name of the company"><br>
-                    <label for="designation">Designation:</label>
-                    <input type="text" name="designation" id="designation" placeholder="Enter the previous designation"><br>
-                    <label for="duration">Duration:</label>
-                    <input type="text" name="duration" id="duration" placeholder="Enter the duration"><br>
-                    <label id="des2" for="description2">Description:</label>
-                    <textarea name="description2" id="description2" cols="30" rows="4"></textarea><br>
                     <!-- Company , Designation , Duration , Description -->
+                    <div class="sameline">
+                        <p>Company : </p>
+                        <input type="text" id="company" placeholder=" Company">
+                    </div>
+                    <div class="sameline">
+                        <p>Designation : </p>
+                        <input type="text" id="designation" placeholder=" Designation">
+                    </div>
+                    <div class="sameline">
+                        <p>Duration : </p>
+                        <input type="text" id="duration" placeholder=" Duration">
+                    </div>
+                    <div class="sameline">
+                        <p>Description : </p>
+                        <textarea id="description" placeholder="Write in HTML format"></textarea>
+                    </div>
                 </fieldset>
-                <button class="btn" onclick="handleSubmit()" type="submit">submit</button>
+                <button type="submit" class="btn" onclick="handleSubmit()">submit</button>
                 <button type="reset" class="btn">reset</button>
-                <button class="btn" onclick="handleLeft()">View And print</button>
+                <button class="btn" onclick="handleLeft()">view and print</button>
             </form>
-    </div>
+        </div>
+        <div class="right">
+            <div class="block1">
+                <!-- Name -->
+                <!--Email , Phone , Github , Linkedin  -->
+                <p id="name_resume"></p>                
+                <p id="email_resume"></p>
+                <p id="phone_resume"></p>
+                <a id="github_resume" src="github_resume"></a>
+                <a id="linkedin_resume" src="linkedin_resume"></a>
+            </div>
+            <div class="block2">
+                <h2>Education</h2>
+                <p id="college_resume"></p>
+                <p id="degree_resume"></p>
+                <p id="startingyear_resume"></p>
+                &#8209;
+                <p id="passingyear_resume"></p>
+            </div>
+            <div class="block3">
+                <h2>Skills</h2>
+                <p class="skills-style" id="skills_resume"></p>
+            </div>
+            <div class="block4">
+                <h2>Project</h2>
+                <p id="project_resume"></p>
+                <p id="projectdescription_resume"></p>
+                <a id="projectlink_resume" href="projectlink_resume"></a>
+            </div>
+            <div class="block5">
+                <h2>Experience</h2>
+                <p id="company_resume"></p>
+                <p id="designation_resume"></p>
+                <p id="duration_resume"></p>
+                <p id="description_resume"></p>
+            </div>
+            
 
-
-    <div class="right">
-      <div class="block1">
-        <h1 class="name-style" id="name_resume"></h1>
-        <p class="email-style" id="email_resume"></p><br>
-        <p class="phone-style" id="phone_resume"></p><br>
-        <p class="github-style" id="github_resume"></p><br>
-        <p class="linkedin-style" id="linkedin_resume"></p><br>
-      </div>
-      <div class="block2">
-        <h2 class="education">Education</h2>
-        <div class="underline"></div>
-        <p class="degree-style" id="degree_resume"></p>
-        <p class="college-style" id="college_resume"></p>
-        <p class="startingyear-style" id="startingyear_resume"></p>
-        <p class="endingyear-style" id="endingyear_resume"></p>
-        <p class="cgpa-style" id="cgpa_resume"></p>
-      
-      </div>
-
-
-      <div class="block3">
-        <h2 class="skill-title">Skill</h2>
-        <div class="underline"></div>
-        <p class="skill-style" id="skill_resume"></p>
-      </div>
-      
-      <div class="block4">
-        <h2 class="project-title">Projects</h2>
-        <div class="underline"></div>
-        <p class="project-style" id="project_resume"></p>
-        <p class="description1-style" id="description1_resume"></p>
-        <p class="link-style" id="link_resume"></p>
-        <!-- Add project information here -->
-      </div>
-      <div class="block5">
-        <h2 class="experience-title">Experience</h2>
-        <div class="underline"></div>
-        <p class="company-style" id="company_resume"></p>
-        <p class="designation-style" id="designation_resume"></p>
-        <p class="duration-style" id="duration_resume"></p>
-        <p class="description2-style" id="description2_resume"></p>
-        <!-- Add experience information here -->
-      </div>
-      <button class="btn print" onclick="handlePrint()">Print</button>
-    </div>
+            <button id="myButton" style="display:none;" onclick="handlePrint()">Print</button>
+        </div>
     </main>
 
     <script src="./app.js"></script>

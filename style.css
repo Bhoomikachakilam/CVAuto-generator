@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 ::-webkit-scrollbar{
     width: .5rem;
@@ -37,6 +42,8 @@ main>.left{
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
 }
+
+
 main>.left legend{
     color: black;
     font-weight: 600;
@@ -58,6 +65,26 @@ main>.left fieldset{
     font-weight: 600;
     cursor: pointer;
 }
+
+#myButton{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+
+  @media print {
+    #myButton {
+      display: none !important;
+    }
+  }
 /* resume */
 main>.right{
     background: whitesmoke;
@@ -69,7 +96,7 @@ main>.right{
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-
+    gap: 1rem;
 }
 main>.right>.block1{
     display: flex;
@@ -78,127 +105,93 @@ main>.right>.block1{
     flex-direction: column;
     color: gray;
     width: 60vw;
-    height: 100px;
-
-}
-.block2,.block3,.block4,.block5{
-    width: 63vw;
 }
 .print{
     display: none;
 }
-#name,#project,#link,#company,#designation,#duration,#email,#phone,#github,#linkedin,#degree,#college,#startingyear,#endingyear,#cgpa{
-    position: fixed;
-    left: 200px;
-    width: 17em;
-} 
-br{
-    margin-bottom: 5em;
-}
-#startingyear,#endingyear{
-    width: 17em;
-}
-#skill,#description1{
-   position:relative;
-   left: 120px;
-   height: 5em;
-}
-#skill{
-    width: 17em;
-    left:9.6em;
-}
-#description1,#description2{
-    position: relative;
-    left: 38.5px;
-    top: 1px;
-    width: 17em;   
-}
 
-#skill-title{
-    position: fixed;
-    top: 250px;
-}
-#description1,#description2{
-    position: relative;
-    bottom: 50px;
-}
-.underline{
-        width: 60em;
-        border-bottom: 2px solid black;
-}
-.education,.experience-title,.project-title,.skill-title{
-    color: rgb(160, 160, 160);
-}
-.email-style,.phone-style,.github-style,.linkedin-style{
-    color: blue;
-    font-size: 14px;
-    margin: 0px 0px 0px 200px;
-}
-/*
-.name-style{
-    margin-top: 50px;
-    position: relative;
-    left: -5px;
-    font-size: 1.5em;
+input, textarea{
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 4px;
+    margin-left: auto;
     
 }
-.email-style{
-    position: relative;
-    left: -315px;
-    bottom: -3.6px;
+input{
+    height: 25px;
 }
-.phone-style{
-    
-    position: relative;
-    right: 11.5rem;
-    bottom: 13px;
+
+textarea{
+    height: 50px;
 }
-.github-style{
-    
-    position: relative;
-    bottom: 30px;
-    left: -35px;
-  
+.sameline{
+    display: flex;
 }
-.linkedin-style{
-    margin-left: 90px;
-    position: relative;
-    left: 16.1em;
-    bottom: 3.3em;
 
-}*/
-
-
-#phone_resume {
+#phone_resume{
     color: rgb(0, 74, 233);
 }
 
-#name_resume {
+#name_resume{
     text-align: center;
     justify-content: center;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bolder;
     color: black;
     display: flex;
-    margin-top: 30px;
-    margin-left: 200px;
 }
 
-#github_resume,
-#linkedin_resume {
+#github_resume , #linkedin_resume, #projectlink_resume{
     color: rgb(0, 74, 233);
     text-decoration: underline;
 }
 
-#email_resume {
+#email_resume{
     color: rgb(0, 74, 233);
 }
-/*
-#degree_resume, 
-#college_resume,
-#startingyear_resume,
-#endingyear_resume,
-#cgpa_resume
+
+/* h2:after
 {
-    
-}*/
+    content:' ';
+    display:block;
+    border:2px solid black;
+} */
+
+.block2 , .block3 , .block4 , .block5{
+    margin-right: auto;
+}
+.right h2{
+    text-decoration-line:underline;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration-style: solid;
+    text-decoration-color: black;
+}
+
+#startingyear_resume {
+    float: left;
+    width: 40%;
+}
+  
+#passingyear_resume {
+    float: right;
+    width: 45%;
+}
+
+#project_resume{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#projectlink_resume{
+    margin-top: 10px;
+}
+
+.block5 h2{
+    margin-bottom: 10px;
+}
+
+#company_resume, #designation_resume , #description_resume , #project_resume, #projectdescription_resume , #projectlink_resume
+{
+    margin-bottom: 3px;
+}

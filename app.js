@@ -7,9 +7,9 @@ const name = document.getElementById("name");
 
 const email = document.getElementById("email");
 
-const phone = document.getElementById("phone");
+const phone = document.getElementById("Mobile");
 
-const github = document.getElementById("github");
+const github = document.getElementById("Github");
 
 const linkedin = document.getElementById("linkedin");
 
@@ -19,17 +19,15 @@ const college = document.getElementById("college");
 
 const startingyear = document.getElementById("startingyear");
 
-const endingyear = document.getElementById("endingyear");
+const passingyear = document.getElementById("passingyear");
 
-const cgpa =document.getElementById("cgpa");
-
-const skill = document.getElementById("skill");
+const skills = document.getElementById("skills");
 
 const project = document.getElementById("project");
 
-const description1 = document.getElementById("description1");
+const projectdescription = document.getElementById("projectdescription");
 
-const link = document.getElementById("link");
+const projectlink = document.getElementById("projectlink");
 
 const company = document.getElementById("company");
 
@@ -70,23 +68,20 @@ function handleSubmit(e) {
   const startingyear_resume = document.getElementById("startingyear_resume");
   startingyear_resume.innerHTML = startingyear.value;
 
-  const endingyear_resume = document.getElementById("endingyear_resume");
-  endingyear_resume.innerHTML = endingyear.value;
+  const passingyear_resume = document.getElementById("passingyear_resume");
+  passingyear_resume.innerHTML = passingyear.value;
 
-  const cgpa_resume= document.getElementById("cgpa_resume");
-  cgpa_resume.innerHTML =cgpa.value;
-
-  const skill_resume = document.getElementById("skill_resume");
-  skill_resume.innerHTML = skill.value;
+  const skills_resume = document.getElementById("skills_resume");
+  skills_resume.innerHTML = skills.value;
 
   const project_resume = document.getElementById("project_resume");
   project_resume.innerHTML = project.value;
 
-  const description1_resume = document.getElementById("description1_resume");
-  description1_resume.innerHTML = description1.value;
+  const projectdescription_resume = document.getElementById("projectdescription_resume");
+  projectdescription_resume.innerHTML = projectdescription.value;
 
-  const link_resume = document.getElementById("link_resume");
-  link_resume.innerHTML = link.value;
+  const projectlink_resume = document.getElementById("projectlink_resume");
+  projectlink_resume.innerHTML = projectlink.value;
 
   const company_resume = document.getElementById("company_resume");
   company_resume.innerHTML = company.value;
@@ -97,8 +92,8 @@ function handleSubmit(e) {
   const duration_resume = document.getElementById("duration_resume");
   duration_resume.innerHTML = duration.value;
 
-  const description2_resume = document.getElementById("description2_resume");
-  description2_resume.innerHTML = description2.value;
+  const description_resume = document.getElementById("description_resume");
+  description_resume.innerHTML = description.value;
 
 }
 
